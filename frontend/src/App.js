@@ -18,9 +18,9 @@ function App() {
 
   return (
     <Router>
-     <Navbar />
-     <SideDraver show={sideToggle} />
-     <Backdrop show={sideToggle} />
+     <Navbar click={() => setSideToggle(true)} />
+     <SideDraver show={sideToggle} click={() => setSideToggle(false)} />
+     <Backdrop show={sideToggle} click={() => setSideToggle(false)} />
      <main>
        <Switch>
          <Route exact path='/' component={HomeScreen} />
