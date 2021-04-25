@@ -43,7 +43,7 @@ export const getProductDetails = (id) => async (dispatch) => {
 }
 
 
-export const removeProductDetails = () => (diaspatch) => {
+export const removeProductDetails = () => (dispatch) => {
     dispatch({
         type: actionTypes.GET_PRODUCT_DETAILS_RESET
     })
